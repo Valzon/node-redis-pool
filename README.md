@@ -8,7 +8,7 @@ node-redis-pool
 ## Introduction
 
 This is lightweight node.js module for using redis connections in pool.
-This module require and based on [node_redis]: https://github.com/mranney/node_redis
+This module require and based on [node_redis][]
 
 Here is an example on how to use it:
 
@@ -27,6 +27,9 @@ RedisPool.getClient(function(client, done) {
 });
 ```
 
+[node_redis]: https://github.com/mranney/node_redis
+
+
 ## Redis pool options
 
 When establishing a connection, you can set the following options:
@@ -34,14 +37,16 @@ When establishing a connection, you can set the following options:
 * `host`: The hostname of the database you are connecting to. (Default: `localhost`)
 * `port`: The port number to connect to. (Default: `6379`)
 * `password`: The password of Redis server. (Default: `null`)
-* `options`: The additional redis connection options. [See more]: https://github.com/mranney/node_redis#rediscreateclientport-host-options  (Default: `{}`)
+* `options`: The additional redis connection options. [See more][] (Default: `{}`)
 * `maxConnections`: The max connections count to redis. All next active connections will waiting for connection release. So, don't forget to release connections after using. (Default: `10`)
 * `handleRedisError`: If enable - all redis exceptions will be handled, using console.error. (Default: `false`)
+
+[See more]: https://github.com/mranney/node_redis#rediscreateclientport-host-options
 
 ## Methods
 
 ### getClient(callback)
-Main method. Returns a redis client from the pool.. The callback is passed an **client** and **done**. The **client** object is a normal [redis client]: https://github.com/mranney/node_redis#usage. Release the **client** into a pool by calling the **done()** function (simplest way) or call .release(client) method.
+Main method. Returns a redis client from the pool. The callback is passed an **client** and **done**. The **client** object is a normal [redis client][]. Release the **client** into a pool by calling the **done()** function (simplest way) or call .release(client) method.
 
 ### release(client)
 This method will release client object back into the pool.
@@ -50,7 +55,9 @@ This method will release client object back into the pool.
 This method will close client object and remove it from pool.
 
 ### closeAll()
-This method will close all redis clients, what is in pool now. Make sure, what all redis operations are complete, before call this method.
+This method will close all redis clients, what is in pool now. Make sure, what all redis operations are completed, before call this method.
+
+[redis client]: https://github.com/mranney/node_redis#usage
 
 ## LICENSE - "MIT License"
 
