@@ -113,4 +113,4 @@ RedisPool.prototype.closeAll = function() {
   for (var i = this._connections.all.length - 1; i>=0; i--) {
     this.close(this._connections.all[i]);
   }
-}
+};

@@ -3,16 +3,15 @@
   "description": "Pool redis connections for Node.JS",
   "version": "0.1.0",
   "author": "Valentin Morenko <valzon90@gmail.com>",
-  "keywords": ["pool", "redis", "node"],
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git@github.com:Valzon/node-redis-pool.git"
+    "url": "https://github.com/Valzon/node-redis-pool"
+  },
+  "engines": {
+    "node": "*"
   },
   "dependencies" : {
     "redis" : "*"
-  },
-  "engines": {
-    "node": ">= 0.8.0"
   }
 }
