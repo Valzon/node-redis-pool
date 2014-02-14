@@ -3,7 +3,7 @@ node-redis-pool
 
 ### Install
 
-    npm install redis-pool
+    npm install pool-redis
 
 ## Introduction
 
@@ -13,7 +13,7 @@ This module require and based on [node_redis][]
 Here is an example on how to use it:
 
 ```js
-var RedisPool = require('redis-pool')({
+var RedisPool = require('pool-redis')({
   'host': 'localhost',
   'password': '',
   'maxConnections': 10
