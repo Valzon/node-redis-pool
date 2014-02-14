@@ -13,13 +13,13 @@ This module require and based on [node_redis][]
 Here is an example on how to use it:
 
 ```js
-var RedisPool = require('pool-redis')({
+var poolRedis = require('pool-redis')({
   'host': 'localhost',
   'password': '',
   'maxConnections': 10
 });
 
-RedisPool.getClient(function(client, done) {
+poolRedis.getClient(function(client, done) {
   client.get('key', function(err, value) {
     console.log('value from redis is:', value);
     done();
