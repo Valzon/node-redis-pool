@@ -2,7 +2,10 @@
   "name": "redis-pool",
   "description": "Pool redis connections for Node.JS",
   "version": "0.1.0",
-  "author": "Valentin Morenko <valzon90@gmail.com>",
+  "author": {
+    "name": "Valentin Morenko",
+    "email": "valzon90@gmail.com"
+  },
   "main": "index.js",
   "repository": {
     "type": "git",
