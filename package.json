@@ -1,7 +1,7 @@
 {
   "name": "pool-redis",
   "description": "Pool redis connections for Node.JS",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "author": {
     "name": "Valentin Morenko",
     "email": "valzon90@gmail.com"

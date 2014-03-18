@@ -70,4 +70,4 @@ testRedisConn(function() {
       });
     })
   })
-})
+});
