@@ -32,8 +32,6 @@ poolRedis.getClient(function(client, done) {
 
 ## Redis pool options
 
-When establishing a connection, you can set the following options:
-
 * `host`: The hostname of the database you are connecting to. (Default: `localhost`)
 * `port`: The port number to connect to. (Default: `6379`)
 * `password`: The password of Redis server. (Default: `null`)
